@@ -1,0 +1,394 @@
+/*General */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    perspective: 600px;
+} 
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.clear-fix{
+    clear: both;
+}
+/*header*/
+.container{
+    width:1100px;
+    margin:auto;
+} 
+
+header .header-head{
+    background-image: url(book-cover-mocku_23-2148131395.jpg);
+    background-size: cover;
+    height: 700px;
+    
+}
+
+.header-head .container p{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    color:black;
+    float: left;
+    
+}
+.header-head .container  p::first-letter {
+    font-size: 200%;
+    color:rgb(12, 94, 89);
+  }
+
+.header-head .container nav{
+    margin-top: 20px;
+    float:right;
+}
+
+.header-head .container ul li{
+    display: inline-block;
+    padding-left: 20px;
+}
+.header-head .container ul li a{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    width:20px;  
+    transition: all .5s ease;
+}
+.header-head .container ul li a:hover{
+    color: #37054a;
+    transform: scale3d(100px,50px,100px)
+}
+
+/*header content*/
+.header-head .container .header-content{
+    width:600px;
+    margin-top: 25%;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.header-head .container .header-content h2{
+    font-size: 50px;
+    font-weight: bold;
+    color:rgb(12, 94, 89);
+    padding-bottom: 20px;
+
+}
+.header-head .container .header-content p{
+    font-size: 20px;
+    color:#fff;
+    padding-bottom: 20px;
+}
+.header-head .container .header-content button:last-child{
+    background-color: #8be2e5;
+    color: #fff;
+    transition: all 1sec ease-in-out;
+}
+.header-head .container .header-content button:last-child:hover{
+    background-color: #7ddfe2;
+}
+
+
+/* commen framework*/
+p{
+    font-family: 'Raleway', sans-serif;
+}
+.mybutton{
+    border:none;
+    outline: none;
+    width: 180px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-left: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    cursor:pointer;
+    background-color: #fff;
+    color:#000;
+}
+
+/* ___________ Content___________*/
+/* ___________ Aricle1 ___________*/
+
+
+.be-first{
+    background-image: url(pexels-tirachard-kumtanom-472311.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height:650px;
+    padding-top:5% ;
+    margin-bottom: 10%;
+    text-align: center;  
+}
+.be-first .center h2 {
+    color:#000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.be-first .center p {
+    color:#000;
+    font-size: 15px;
+    margin: 1% 0 2%;
+    font-weight: bold;
+}
+.be-first .img img{
+    width:450px;   
+}
+/* ___________ Article2 feature ___________*/
+
+.feature  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: left;
+
+
+}
+.feature .feat1:nth-child(1) hr{
+    height: 5px;
+    background-color: #6d3f96;
+    border:none;
+    margin-right:25px;
+}
+.feature .feat1:nth-child(2) hr{
+    height: 5px;
+    background-color: #70cbce;
+    border:none;
+    margin-right:25px;
+}
+.feature .feat1:nth-child(3) hr{
+    height: 5px;
+    background-color: #fdc05d;
+    border:none;
+    margin-right:25px;
+}
+
+.feature .feat1 h2{
+    font-size: 18px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+
+}
+.feature .feat1 p{
+    color:#929496;
+    line-height: 1.5;
+    margin-bottom: 70px;
+}
+/* ___________ Article3 pricing ___________*/
+
+.pricing{
+    padding: 10% 0 ;
+    background: #70cbce;
+    height: auto;
+    text-align: center;
+}
+.pricing h2 {
+    color:#fff;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.pricing p {
+    color:#fff;
+    font-size: 15px;
+    margin: 1% 0 4%;
+}
+.pricing .pricing-flex{
+    display:flex;
+    justify-content: center;
+    width:100%;
+}
+.pricing .pricing-flex .pricing-item{
+    width: 32%; 
+  
+}
+.pricing .pricing-flex .pricing-item:nth-last-of-type(1)
+, .pricing .pricing-flex .pricing-item:nth-last-of-type(3){
+    margin-top: 20px;  
+}
+.pricing .pricing-flex .pricing-item ul{
+    list-style: none;
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: all 1sec ease-in-out;
+}
+.pricing .pricing-flex .pricing-item ul:hover{
+    margin-top: -10px;
+}
+
+.pricing .pricing-flex .pricing-item .personal{
+    background-color: #000;
+    color:#fff;
+    padding: 20px;
+      border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.pricing .pricing-flex .pricing-item .dollar{
+    background-color: #231f20;
+    color:#fff;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    transition: all 1sec ease-in-out;
+}
+.pricing .pricing-flex .pricing-item ul .dollar:hover{
+    background: #333;
+}
+
+.pricing .pricing-flex .pricing-item .dollar small{
+    font-weight: normal;
+    color:#929496;
+}
+
+.pricing .pricing-flex .pricing-item .list {
+    padding: 20px;
+    border-bottom: 1px dotted #E8EAEA;
+    font-weight: bold;
+}
+.pricing .pricing-flex .pricing-item .content {
+    color:#929496;
+    font-size: 12px;
+    font-weight: normal;
+    padding:20px;
+}
+
+.pricing .pricing-flex .pricing-item .btn{
+    color:#70cbce;
+    padding: 20px;
+    text-transform: uppercase;
+    transition: all 1sec ease-in-out;
+    cursor: pointer;
+}
+.pricing .pricing-flex .pricing-item .btn:hover{
+    background-color: #f5f5f5;
+}
+/* ___________ Article4 invitation ___________*/
+
+.invite{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color:#f5f5f5;
+    text-align: center;
+}
+.invite i {
+    color: #70cbce;
+    border: 2px solid #70cbce;
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 2%;
+}
+.invite h2{
+    font-size: 40px;
+    margin-bottom: 2%;
+}
+.invite p{
+        margin-bottom: 2%;
+
+}
+.invite input{
+    display:block;
+    margin: auto;
+    width:300px;
+    height: 50px;
+    padding: 10px;
+    border:0;
+    outline: 0;
+    margin-bottom: 2%;
+    border-radius: 10px;
+}
+/*.invite input::-webkit-input-placeholder*/
+.invite button{
+    width: 200px;
+    height: 50px;
+    background-color:#70cbce;
+    padding: 10px;
+    border:0;
+    outline: 0;
+    cursor:pointer;
+    text-transform: uppercase;
+    color: #fff;
+    
+}
+
+/* ___________ Article5 info ___________*/
+.info{
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+.info .mid{
+    width: 75%;
+    margin:auto;
+}
+.info .info-img{
+    width:25%;
+    float:left;
+    margin-bottom: 2%;
+}
+.info .info-content{
+    width:70%;
+    float:left;
+        margin-bottom: 2%;
+
+}
+/* ___________ Article6 footer___________*/
+.footer{
+    padding-bottom: 7%;
+}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+.left span{
+    padding-right:15px;
+}
+.right span{
+    color:#ccc;
+}
+
+/*footer*/
+/*
+
+
+.header-head .container .header-footer{
+    width:30px;
+    height:45px;
+    margin:0 auto 40px;
+    border:2px solid #fff;
+    border-radius: 20px;
+    text-align: center;
+}
+.header-head .container .header-footer .scroll{
+    width:5px;
+    height: 7px;
+    background-color: beige;
+    margin:  auto;
+    position: relative;
+    top:0px;
+    animation: scrolling 1s ease-in-out infinite;
+}
+@keyframes scrolling{
+    0%{
+        opacity: 0;
+        top:5px;   
+    }
+    30%{
+        opacity: 1;
+        top:15px;   
+    }
+    60%{
+        opacity: 1.5;
+        top:30px;   
+    }
+    100%{
+        opacity: 2;
+        top:40px;   
+    }
+}
+*/
